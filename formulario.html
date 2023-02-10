@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de cadastro</title>
+</head>
+
+<body>
+    <div class="campo">
+        <h1 id="titulo">Cadastro</h1>
+        <p id="subtitulo">Prencha com as suas informações</p>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"> Nome</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"> Sobrenome</label>
+                <input type="text" nome="sobrenome" id="sobrenome" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" nome="email" id="email" required>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label>Qual a sua faixa etária?</label>
+                <label>
+                    <div class="campo">
+                        <input type="radio" name="menor18" value="Menor de 18 anos">Menor de 18 anos
+                </label>
+                <label>
+                    <input type="radio" name="menor30" value="Entre 18 e 30 anos">Entre 18 e 30 anos
+                </label>
+                <label>
+                    <input type="radio" name="maior30" value="Mais de 30 anos">Mais de 30 anos
+                </label>
+            </div>
+
+        </fieldset>
+
+        <div class="campo">
+            <fieldset class="grupo">
+                <label>Qual a sua cidade?</label>
+                <select id="cidade">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Rio de janeiro</option>
+                    <option>São Paulo</option>
+                    <option>Outro</option>
+                </select>
+                </label>
+            </fieldset>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label> Quais e-mails você tem interesse em receber?</label>
+            </div>
+            <div class="campo">
+                <input type="checkbox" id="todos" name="todos" value="todos">Todos</label>
+            </div>
+            <div class="campo">
+                <input type="checkbox" id="promoções" name="promoções" value="promoções">Promoções</label>
+            </div>
+            <div class="campo">
+                <input type="checkbox" id="ofertas" name="ofertas" value="ofertas">Ofertas</label>
+            </div>
+            <div class="campo">
+                <input type="checkbox" id="atualizações" name="atualizações" value="todos">Atualizações</label>
+            </div>
+            <div class="campo">
+                <input type="checkbox" id="nenhum" name="nenhum" value="nenhum">Nenhum</label>
+            </div>
+        </fieldset>
+
+        <button class="botao" type="submit"> Concluir cadastro</button>
+    </form>
+</body>
+</html>
